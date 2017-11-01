@@ -41,6 +41,7 @@ export class AppComponent implements AfterViewInit {
         center: 'title',
         right: 'agendaDay,agendaWeek,month,listDay'
       },
+      eventOverlap: false,
       timezone: 'local',
       allDaySlot: false,
       defaultView: 'agendaDay',
