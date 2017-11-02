@@ -1,4 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
 @import "../node_modules/fullcalendar/dist/fullcalendar.css";
 @import "../node_modules/fullcalendar-scheduler/dist/scheduler.css";
-@import "~@angular/material/prebuilt-themes/pink-bluegrey.css";
+@import '~https://fonts.googleapis.com/icon?family=Material+Icons';
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+
+
+body {
+  margin: 0;
+  font-family: Roboto, sans-serif;
+}
+
+.element-full-width {
+  width: 100%;
+}
+.container-center{
+  justify-content: center;
+}

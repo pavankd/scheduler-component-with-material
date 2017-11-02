@@ -1,3 +1,17 @@
-<p>
-  navbar works!
-</p>
+<mat-toolbar color="primary">
+  <span>Medintelli</span>
+  <span class="fill-remaining-space"></span>
+  <div fxLayout="row" fxShow="false" fxShow.gt-sm >
+  <a mat-button >Home</a>
+  <a mat-button >Demogrphics</a>
+  <a mat-button >Patient Chart</a>
+  <a mat-button >Orders</a>
+  </div>
+  <button mat-button [matMenuTriggerFor]="menu">
+    Menu <mat-icon>more_vert</mat-icon>
+  </button>
+</mat-toolbar>
+<mat-menu x-position="before" #menu="matMenu">
+  <button mat-menu-item>Settings</button>
+  <button mat-menu-item>Options</button>
+</mat-menu>
