@@ -8,10 +8,11 @@
   <a mat-button >Orders</a>
   </div>
   <button mat-button [matMenuTriggerFor]="menu">
-    Menu <mat-icon>more_vert</mat-icon>
+    {{userName}} <mat-icon>more_vert</mat-icon>
   </button>
 </mat-toolbar>
 <mat-menu x-position="before" #menu="matMenu">
   <button mat-menu-item>Settings</button>
   <button mat-menu-item>Options</button>
+  <button mat-menu-item (click)="logOut()">LogOut</button>
 </mat-menu>

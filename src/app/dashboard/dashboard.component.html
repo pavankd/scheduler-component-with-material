@@ -1,2 +1,4 @@
-<app-navbar></app-navbar>
+<div *ngIf="userName">
+<app-navbar [userName]="userName"></app-navbar>
 <app-scheduler></app-scheduler>
+</div>
